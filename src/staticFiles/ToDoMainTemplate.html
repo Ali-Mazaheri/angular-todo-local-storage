@@ -1,0 +1,9 @@
+<div class="toDoMain">
+	<input placeholder="Add New To Do" type="text" #ref> 
+  <span class="add button" (click)="onAddNewItem(ref)">&#x271A;</span>
+  <div>
+  ......................................................
+  <br/>
+    <toDoItem *ngFor="let it of items; let i = index" [item]=it [list]=items [index]=i>td</toDoItem>
+  </div>
+</div>

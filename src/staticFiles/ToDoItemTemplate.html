@@ -1,0 +1,6 @@
+<div class="toDoItem">
+  <input id=Ch{{index}} type="checkbox" [checked]="item.isChecked" (change)="onToggleDoneItem()">
+  <label attr.for=Ch{{index}}></label>
+  <input (change)="onEditItem(ref.value)" type="text" #ref value={{item.toDo}}> 
+  <span class="delete button" (click)="onDeleteItem()">&#x2716;</span>
+</div>
